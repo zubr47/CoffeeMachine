@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Coffee Machine</string>
+    <string name="espresso">espresso</string>
+    <string name="latte">latte</string>
+    <string name="cappuccino">cappuccino</string>
+    <string name="take">take</string>
+    <string name="fill">fill</string>
+    <string name="remaining">remaining</string>
+    <string name="Ready">Ready</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

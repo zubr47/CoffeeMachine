@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_money"
+        android:id="@+id/take"
+        android:title="take"
+        android:orderInCategory="3"/>
+
+    <item android:icon="@drawable/ic_circle"
+        android:id="@+id/fill"
+        android:title="fill"
+        android:orderInCategory="4"/>
+
+    <item android:icon="@drawable/ic_basket"
+        android:id="@+id/remaining"
+        android:title="remaining"
+        android:orderInCategory="2"/>
+
+    <item android:icon="@drawable/ic_food"
+        android:id="@+id/buy"
+        android:title="buy"
+        android:orderInCategory="1"/>
+</menu>
