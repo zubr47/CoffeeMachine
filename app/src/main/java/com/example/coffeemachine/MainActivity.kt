@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.buy ->  openFragment(R.id.place_holder, BlankMachine.newInstance())
                 R.id.take ->  openFragment(R.id.place_holder,FragmentTake.newInstance())
-                R.id.fill -> ""
+                R.id.fill ->  openFragment(R.id.place_holder,FragmentFill.newInstance())
                 R.id.remaining ->  openFragment(R.id.place_holder,FragmentRemaining.newInstance())
             }
             true
