@@ -1,5 +1,6 @@
 package com.example.coffeemachine
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,14 +25,17 @@ class BlankMachine : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.buttonEspresso.setOnClickListener() {
             Machine.buy(Machine.ESPRESSO)
+            playSound()
             display(Machine.status_message)
         }
         binding.buttonCappuccino.setOnClickListener() {
             Machine.buy(Machine.CAPPUCCINO)
+            playSound()
             display(Machine.status_message)
         }
         binding.buttonLatte.setOnClickListener() {
             Machine.buy(Machine.LATTE)
+            playSound()
             display(Machine.status_message)
         }
     }
@@ -42,6 +46,14 @@ class BlankMachine : Fragment() {
              binding.tvDisplay.text = "Ready"
          }
      }
+    fun playSound() {
+
+        var resId = getResources().getIdentifier(R.raw.kaffeemaschine.toString(),
+            "raw", activity?.packageName)
+
+        val mediaPlayer = MediaPlayer.create(activity, resId)
+        mediaPlayer.start()
+    }
 
     companion object {
         fun newInstance() =BlankMachine()
